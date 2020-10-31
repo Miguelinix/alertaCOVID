@@ -1,0 +1,685 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Elate &mdash; 100% Free Fully Responsive HTML5 Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Simple Line Icons -->
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Icono -->
+	<link rel="icon" type="image/jpg" href="/imagenes/icono.jpg" />
+
+	<!-- 
+	Default Theme Style 
+	You can change the style.css (default color purple) to one of these styles
+	
+	1. pink.css
+	2. blue.css
+	3. turquoise.css
+	4. orange.css
+	5. lightblue.css
+	6. brown.css
+	7. green.css
+
+	-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/modal.css">
+
+	<!-- Styleswitcher ( This style is for demo purposes only, you may delete this anytime. ) -->
+	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	<!-- End demo purposes only -->
+	<link rel="stylesheet" href="css/lity.css">
+
+	<style>
+	/* For demo purpose only */
+	
+	/* For Demo Purposes Only ( You can delete this anytime :-) */
+	#colour-variations {
+		padding: 10px;
+		-webkit-transition: 0.5s;
+	  	-o-transition: 0.5s;
+	  	transition: 0.5s;
+		width: 80px;
+		position: fixed;
+		right: 0;
+		top: 100px;
+		z-index: 999999;
+		background: #fff;
+		/* border-radius: 4px; */
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	#colour-variations.sleep {
+		margin-right: -80px;
+	}
+	#colour-variations.active {
+		margin-right: 78px;
+	}
+	#colour-variations h3 {
+		text-align: center;;
+		font-size: 11px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #777;
+		margin: 0 0 10px 0;
+		padding: 0;;
+	}
+	#colour-variations ul,
+	#colour-variations ul li {
+		padding: 0;
+		margin: 3px;
+	}
+	#colour-variations li {
+		list-style: none;
+		display: block;
+		margin-bottom: 5px!important;
+		float: left;
+		width: 100%;
+	}
+	#colour-variations li a {
+		/* width: 100%; */
+		position: relative;
+		/* display: block; */
+		overflow: hidden;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		border-radius: 50%;
+		-webkit-transition: 0.4s;
+		-o-transition: 0.4s;
+		transition: 0.4s;
+	}
+	#colour-variations li a i {
+		text-align: center;
+	}
+	#colour-variations li a:hover {
+	  	opacity: .9;
+	}
+
+	.option-toggle {
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin-top: 5px;
+		margin-left: -30px;
+		width: 30px;
+		height: 30px;
+		background: #f64662;
+		text-align: center;
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+		color: #fff;
+		cursor: pointer;
+		-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+		box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+	}
+	.option-toggle i {
+		/* top: 2px; */
+		position: relative;
+	}
+	.option-toggle:hover, .option-toggle:focus, .option-toggle:active {
+		color:  #fff;
+		text-decoration: none;
+		outline: none;
+	}
+	</style>
+	<!-- End demo purposes only -->
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+		<header role="banner" id="fh5co-header">
+			<div class="container">
+				<!-- <div class="row"> -->
+			    <nav class="navbar navbar-default">
+		        <div class="navbar-header">
+		        	<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+		         <a class="navbar-brand" href="index.html">Alerta COVID</a> 
+		        </div>
+		        <div id="navbar" class="navbar-collapse collapse">
+		          <ul class="nav navbar-nav navbar-right">
+		            <li class="active"><a href="#" data-nav-section="home"><span>Home</span></a></li>
+		            <li><a href="#" data-nav-section="work"><span>COVID</span></a></li>
+		            <li><a href="#" data-nav-section="testimonials"><span>Precauciones</span></a></li>
+		            <li><a href="#" data-nav-section="services"><span>Ayuda</span></a></li>
+		            <li><a href="#" data-nav-section="about"><span>Testimonios</span></a></li>
+		            <!-- <li><a href="#" data-nav-section="contact"><span>Contact</span></a></li> -->
+		          </ul>
+		        </div>
+			    </nav>
+			  <!-- </div> -->
+		  </div>
+	</header>
+
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/full_image_2.jpg);" data-stellar-background-ratio="0.5">
+		<div class="gradient"></div>
+		<div class="container">
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="to-animate">Alerta COVID</h1>
+							<h2 class="to-animate">Encuentra la información acerca del COVID en El Salvador <br><a class="worki" href="#fh5co-intro" >CONOCE MÁS</a></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="slant"></div>
+	</section>
+
+	<section id="fh5co-intro">
+		<div class="container">
+			<div class="row row-bottom-padded-lg">
+				<div class="fh5co-block to-animate" style="background-image: url(images/img_7.jpg);">
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text">
+						<i class="fh5co-intro-icon icon-bulb"></i>
+						<h2>Propagación</h2>
+						<p>Se propaga más comúnmente durante el contacto cercano</p>
+						<p><a href="#popup1" class="btn btn-primary" >Saber más</a></p>
+
+						
+					</div>
+					
+				</div>
+				
+				<div class="fh5co-block to-animate" style="background-image: url(images/img_8.jpg);">
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text">
+						<i class="fh5co-intro-icon icon-wrench"></i>
+						<h2>Emergencia</h2>
+						<p>Estado del salvador en la emergencia del COVID-19</p>
+						<p><a href="#popup2" class="btn btn-primary">Saber más</a></p>
+						<!-- <a class="btn modal-trigger" href="#popup2">Modal</a> -->
+
+						<!-- Modal Structure -->
+						
+					</div>
+				</div>
+				<div class="fh5co-block to-animate" style="background-image: url(images/img_10.jpg);">
+					<div class="overlay-darker"></div>
+					<div class="overlay"></div>
+					<div class="fh5co-text">
+						<i class="fh5co-intro-icon icon-rocket"></i>
+						<h2>transmisión</h2>
+						<p>Puede contagiarse mediante la transmisión por aire</p>
+						<p><a href="#popup3" class="btn btn-primary">Saber más</a></p>
+						<!-- <a class="btn modal-trigger" href="#popup3">Modal</a> -->
+
+						<!-- Modal Structure -->
+						
+					</div>
+				</div>
+			</div>
+
+
+				<!-- los popups -->
+				<div id="popup1" class="overlag">
+					<div class="popup">
+						<div class="img"><img src="images/img_7.jpg" alt=""></div>
+											
+						<div class="content">
+							<h2>Se propaga más comúnmente durante el contacto cercano</h2>
+							<a class="close" href="#fh5co-intro">&times;</a>
+							•	Las personas que están físicamente cerca (dentro de los 6 pies de distancia) de una persona con COVID-19 o que tienen contacto directo con esa persona tienen mayor riesgo de infección.
+							<br> <br>•	Cuando las personas con COVID-19 tosen, estornudan, cantan, hablan o respiran, producen gotitas respiratorias. Estas gotitas pueden variar de tamaño desde gotitas grandes (algunas de las cuales son visibles) a gotitas más pequeñas. Las gotitas pequeñas también pueden formar partículas al secarse muy rápidamente en las corrientes de aire. 
+
+						</div>
+					</div>
+				</div>
+				<div id="popup2" class="overlag">
+					<div class="popup">
+						<div class="img"><img src="images/img_8.jpg" alt=""></div>
+											
+						<div class="content">
+							<h2>Estado de El Salvador en la emergencia del COVID-19</h2>
+							<a class="close" href="#fh5co-intro">&times;</a>
+							El primer caso de la pandemia de COVID-19 en El Salvador se reportó el miércoles 18 de marzo de 2020. Según el Presidente de El Salvador Nayib Bukele, que había decretado Estado de emergencia el 11 de marzo, el infectado era un hombre procedente de Italia que ingresó por un punto ciego del país. Trata de un hombre entre 20 a 40 años de edad que ingresó al país procedente de Italia por medio de un punto ciego en la área fronteriza del país. El caso fue identificado en la ciudad de Metapán, del departamento de Santa Ana. Se activó un cordón sanitario alrededor del municipio durante 48 horas para tratar de identificar posibles nexos epidemiológicos.
+						</div>
+					</div>
+				</div>
+				<div id="popup3" class="overlag">
+					<div class="popup">
+						<div class="img"><img src="images/img_10.jpg" alt=""></div>
+											
+						<div class="content">
+							<h2>Puede contagiarse mediante la transmisión por aire</h2>
+							<a class="close" href="#fh5co-intro">&times;</a>
+							•	Algunas infecciones pueden propagarse a través de la exposición al virus presente en las pequeñas partículas y gotitas respiratorias que quedan en el aire durante minutos u horas. Estos virus pueden infectar a las personas que están a más de 6 pies de distancia de la persona infectada o después de que la persona haya abandonado el lugar.
+						<br><br>	•	A este tipo de propagación se lo denomina transmisión por aire y es una de las principales formas de propagación de infecciones como la tuberculosis, el sarampión y la varicela.
+
+						</div>
+					</div>
+				</div>
+
+
+
+
+			<div class="row watch-video text-center to-animate">
+				<span>Mira el video</span>
+				<a href="https://youtu.be/CJ6yuCftzMg?list=PLfQ_63-k_c8Yf01YzW1K_YJtyKFEqNLR5" data-lity class=" btn-video"><i class="icon-play2"></i></a>
+				<!-- <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo btn-video"><i class="icon-play2"></i></a> -->
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-work" data-section="work">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">COVID</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Puedes ver las como afecta el COVID en la vida de las personas.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row row-bottom-padded-sm">
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen14.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen14.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Imagen 1</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen2.jpeg" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen2.jpeg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 2</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen3.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen3.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 3</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen4.jpeg" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen4.jpeg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 4</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen5.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen5.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 1</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen6.jpeg" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen6.jpeg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 2</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen7.png" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen7.png" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 3</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen8.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen8.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 4</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-4 col-sm-6 col-xxs-12">
+					<a href="imagenes/imagen13.jpg" class="fh5co-project-item image-popup to-animate">
+						<img src="imagenes/imagen13.jpg" alt="Image" class="img-responsive">
+						<div class="fh5co-text">
+						<h2>Project 2</h2>
+						<span>COVID</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center to-animate">
+					<p>* Busca más información aquí <a href="https://covid19.gob.sv/" target="_blank">covid19.gob.sv</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-testimonials" data-section="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Precauciones</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>¡Toma en cuenta estas precauciones!</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Usar una cubierta de tela para la cara (o mascarilla, si tiene una) si va a estar en contacto con otras personas. Las cubiertas de tela para la cara son para uso exclusivo de personas mayores de 2 años que no tengan problemas para respirar.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person1.jpg" alt="Person"></figure>
+							<p>
+							Zaira Pineda<span class="subtext">Salvadoreña</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo; Toser y estornudar en un pañuelo desechable. Tirar el pañuelo y luego lavarse las manos de inmediato. Lavarse con agua y jabón durante un mínimo de 20 segundos, o usar un gel antiséptico que contenga alcohol. Use su propia ropa de cama y toallas y no las comparta con las personas con las que convive.&rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person2.jpg" alt="Person"></figure>
+							<p>
+							John Doe <span class="subtext">Salvadoreño</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="box-testimony">
+						<blockquote class="to-animate-2">
+							<p>&ldquo;Todos los días, utilice un limpiador de uso doméstico o una toallita para limpiar cosas que se tocan mucho. Entre estas cosas, pomos de puertas, interruptores de luz, juguetes, controles remotos, manijas de fregaderos, encimeras y teléfonos.  &rdquo;</p>
+						</blockquote>
+						<div class="author to-animate">
+							<figure><img src="images/person3.jpg" alt="Person"></figure>
+							<p>
+							Chris Nash <span class="subtext">Hondureño</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</section>
+
+
+	<section id="fh5co-services" data-section="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-left">
+					<h2 class=" left-border to-animate">Ayuda</h2>
+					<div class="row">
+						<div class="col-md-8 subtext to-animate">
+							<h3>Se propaga con menor frecuencia a través del contacto con superficies contaminadas.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-anchor"></i>
+					<h3>Propagación</h3>
+					<p>Al parecer el virus que causa el COVID-19 puede propagarse de personas a animales en ciertas situaciones, aunque raramente se propaga entre personas y animales.</p>
+				</div>
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-layers2"></i>
+					<h3>Contácto físico</h3>
+					<p>Las personas que están físicamente cerca (dentro de los 6 pies de distancia) de una persona con COVID-19 o que tienen contacto directo con esa persona tienen mayor riesgo de infección.</p>
+				</div>
+
+				<div class="clearfix visible-sm-block"></div>
+
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-video2"></i>
+					<h3>Exposición al virus</h3>
+					<p>Las infecciones ocurren principalmente a través de la exposición a gotitas respiratorias cuando una persona está en contacto cercano con alguien con COVID-19.</p>
+				</div>
+				<div class="col-md-6 col-sm-6 fh5co-service to-animate">
+					<i class="icon to-animate-2 icon-monitor"></i>
+					<h3>Infecciones</h3>
+					<p>Las gotitas respiratorias provocan infecciones cuando son inhaladas o se depositan en las membranas mucosas, como las que revisten la parte interna de la nariz y la boca.</p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	<section id="fh5co-about" data-section="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">Testimonios</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>Apartado donde se expresan como se sienten las personas ante la situación nacional</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person1.jpg" alt="Image"></figure>
+						<h3>Zaira Pineda</h3>
+						<span class="fh5co-position">Salvadoreña</span>
+						<p>Sé que las personas al obedecer las normativas de precaución ante el COVID-19 logran evitar enfermarse, El Salvador a dado bien la batalla contra la enfermedad.</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person3.jpg" alt="Image"></figure>
+						<h3>Larry Ben</h3>
+						<span class="fh5co-position">Hondureño</span>
+						<p>Por la experiencia que tenemos en el tema, hemos sido muy juiciosos en el uso de la información, pero también muy responsables reconociendo que la vida es lo más importante y llamando siempre a la solidaridad y la confianza de los ciudadanos.</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-person text-center to-animate">
+						<figure><img src="images/person2.jpg" alt="Image"></figure>
+						<h3>Rob Smith</h3>
+						<span class="fh5co-position">Salvadoreño</span>
+						<p>La confianza y la solidaridad pueden ser mucho más efectivas que el control a la hora de hacer efectivo el cumplimiento de las medidas de confinamiento y de prevención de la transmisión de la epidemia.</p>
+						<ul class="social social-circle">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	
+	
+	
+	<footer id="footer" role="contentinfo">
+		<a href="#" class="gotop js-gotop">Ir<i class="icon-arrow-up2">Arriba</i></a>
+		<div class="container">
+			<div class="">
+				<div class="col-md-12 text-center">
+					<p>&copy; Alerta COVID. All Rights Reserved.</p>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<ul class="social social-circle">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	
+	<!-- For demo purposes Only ( You may delete this anytime :-) -->
+	<div id="colour-variations" class="sleep">
+		<a class="option-toggle"><i class="icon-gear"></i></a>
+		<h3>Redes Sociales</h3>
+		
+			<ul class="social social-circle">
+				<li><a href="#"><i class="icon-twitter"></i></a></li>
+				<li><a href="#"><i class="icon-facebook"></i></a></li>
+				<li><a href="#"><i class="icon-dribbble"></i></a></li>
+			</ul>
+	</div>
+	<!-- End demo purposes only -->
+<!-- scrips video -->
+	<script src="js/jquery.js"></script>
+	<script src="js/lity.js"></script>
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Counter -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
+
+	<!-- For demo purposes only styleswitcher ( You may delete this anytime ) -->
+	<script src="js/jquery.style.switcher.js"></script>
+	<script>
+		$(function(){
+			$('#colour-variations ul').styleSwitcher({
+				defaultThemeId: 'theme-switch',
+				hasPreview: false,
+				cookie: {
+		          	expires: 30,
+		          	isManagingLoad: true
+		      	}
+			});	
+			$('.option-toggle').click(function() {
+				$('#colour-variations').toggleClass('sleep');
+			});
+		});
+	</script>
+	<!-- End demo purposes only -->
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
